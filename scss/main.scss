@@ -92,7 +92,7 @@ main {
 
     .bio {
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .job-1 {
@@ -122,7 +122,7 @@ main {
 
     img {
         width: 100%;
-        border: 3px #fff solid;
+        border: 3px $secondary-color solid;
 
         &:hover {
             opacity: 0.5;
