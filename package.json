@@ -2,6 +2,7 @@
   "name": "portfolio_project",
   "version": "1.0.0",
   "description": "Portfolio Project Website",
+  "homepage": "https://TommiUp.github.io/portfolio_project",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
@@ -10,6 +11,7 @@
   "author": "Tommi Uponen",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "node-sass": "^9.0.0"
   }
 }
