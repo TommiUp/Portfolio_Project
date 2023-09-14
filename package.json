@@ -2,7 +2,7 @@
   "name": "portfolio_project",
   "version": "1.0.0",
   "description": "Portfolio Project Website",
-  "homepage": "https://TommiUp.github.io/portfolio_project",
+  "homepage": "https://TommiUp.github.io/Portfolio_Project",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
