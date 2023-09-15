@@ -3,12 +3,36 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .about-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skills-info {
+        justify-content: space-between;
+    }
+
+    .boxes {
+        justify-content: space-between;
+    }
 }
 
 // Desktops & Laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-info {
+        justify-content: space-between;
+    }
+
+    .boxes {
+        justify-content: space-between;
     }
 }
 
