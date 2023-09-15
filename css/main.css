@@ -93,6 +93,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -185,6 +188,25 @@ main {
     border-bottom: #1794c9 5px solid; }
   .about-info .job h6 {
     font-size: 1rem; }
+
+.skills-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .skills-info div {
+    font-size: 1.15rem;
+    border: 3px #1794c9 solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+  .skills-info .no-box {
+    border: none;
+    padding: 0;
+    margin-bottom: 0; }
+  .skills-info h3 {
+    font-weight: 550; }
 
 .projects {
   display: grid;
