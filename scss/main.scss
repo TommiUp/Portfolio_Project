@@ -127,12 +127,10 @@ main {
     margin-top: 1rem;
 
     div {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         border: 3px $secondary-color solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
-
-        @include easeOut;
     }
 
     .no-box {
