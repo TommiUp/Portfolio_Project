@@ -24,10 +24,13 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.95;
-  visibility: hidden; }
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
   .menu.show {
-    visibility: visible; }
+    opacity: 0.9;
+    visibility: visible;
+    transform: translateY(0); }
   .menu-branding, .menu-nav {
     display: flex;
     flex-flow: column wrap;
