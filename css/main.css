@@ -28,7 +28,7 @@
   visibility: hidden;
   transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
   .menu.show {
-    opacity: 0.9;
+    opacity: 0.95;
     visibility: visible;
     transform: translateY(0); }
   .menu-branding, .menu-nav {
@@ -266,11 +266,11 @@ main {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%, 0, 0); }
+    transform: translate3d(-100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/portrait_image_small.png");
       width: 150px;
