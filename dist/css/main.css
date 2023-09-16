@@ -26,7 +26,7 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out; }
   .menu.show {
     opacity: 0.95;
     visibility: visible;
@@ -186,20 +186,28 @@ main {
     background: white;
     padding: 0.5rem;
     border-bottom: #1794c9 5px solid; }
+  .about-info .job h3 {
+    font-size: 1.15rem;
+    color: #1794c9; }
   .about-info .job h6 {
     font-size: 1rem; }
 
 .skills-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'strength1 strength2 strength3';
+  grid-template-columns: repeat(3, 1fr); }
+  .skills-info .strength-1 {
+    grid-area: strength1; }
+  .skills-info .strength-2 {
+    grid-area: strength2; }
+  .skills-info .strength-3 {
+    grid-area: strength3; }
   .skills-info div {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     border: 3px #1794c9 solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 0.8rem; }
   .skills-info .no-box {
     border: none;
     padding: 0;
@@ -268,7 +276,10 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .skills-info {
+    grid-template-areas: 'strength1' 'strength2' 'strength3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -298,6 +309,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .skills-info {
+    grid-template-areas: 'strength1' 'strength2' 'strength3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

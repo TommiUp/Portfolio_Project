@@ -10,6 +10,15 @@
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .skills-info {
+        grid-template-areas:
+            'strength1'
+            'strength2'
+            'strength3';
+
+        grid-template-columns: 1fr;
+    }
 }
 
 // Tablets & Small Laptops
@@ -59,6 +68,15 @@
             'job1'
             'job2'
             'job3';
+
+        grid-template-columns: 1fr;
+    }
+
+    .skills-info {
+        grid-template-areas:
+            'strength1'
+            'strength2'
+            'strength3';
 
         grid-template-columns: 1fr;
     }
