@@ -148,6 +148,7 @@ main {
         border: 3px $secondary-color solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 0.8rem;
+        border-radius: 15px;
     }
 
     .no-box {
@@ -193,7 +194,7 @@ main {
         border: 3px $secondary-color solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
-
+        border-radius: 15px;
         @include easeOut;
 
         &:hover {
@@ -225,12 +226,14 @@ main {
     @extend .btn;
     background: darken($primary-color, 50);
     color: #fff;
+    border-radius: 15px;
 }
 
 .btn-light {
     @extend .btn;
     background: darken($primary-color, 10);
     color: #333;
+    border-radius: 15px;
 }
 
 #main-footer {
