@@ -170,6 +170,7 @@ main {
     img {
         width: 100%;
         border: 3px $secondary-color solid;
+        border-radius: 15px;
 
         &:hover {
             opacity: 0.5;
@@ -228,7 +229,7 @@ main {
 
 .btn-light {
     @extend .btn;
-    background: lighten($primary-color, 50);
+    background: darken($primary-color, 10);
     color: #333;
 }
 

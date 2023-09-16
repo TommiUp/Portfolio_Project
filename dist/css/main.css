@@ -220,7 +220,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #1794c9 solid; }
+    border: 3px #1794c9 solid;
+    border-radius: 15px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #1794c9;
@@ -259,7 +260,7 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: white;
+  background: #e6e6e6;
   color: #333; }
 
 #main-footer {
